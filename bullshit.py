@@ -2,7 +2,7 @@ import json
 
 class Bullshit:
     def __init__(self):
-        self.bullshitWords = lines = open("bullshit.txt").read().lower().splitlines()
+        self.bullshitWords = open("bullshit.txt").read().lower().splitlines()
         self.detectedBullshit = 0
 
         with open("config.json") as file:
